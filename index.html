@@ -96,42 +96,44 @@
 
   <h2>Formulir Respon Pengguna</h2>
 
-  <form>
-    <label>Nama Lengkap</label>
-    <input type="text" placeholder="Masukkan nama Anda" required>
+<form action="https://formspree.io/f/xzznvego" method="POST">
 
-    <label>Asal Instansi</label>
-    <input type="text" placeholder="Nama instansi / lembaga / kampus" required>
+<label>Nama Lengkap</label>
+<input type="text" name="nama" placeholder="Masukkan nama Anda" required>
 
-    <label>Pekerjaan / Peran</label>
-    <input type="text" placeholder="Contoh: Mahasiswa, Peneliti, Analis SIG" required>
+<label>Asal Instansi</label>
+<input type="text" name="instansi" placeholder="Nama instansi / lembaga / kampus" required>
 
-    <label>Tingkat Pengalaman Menggunakan Peta</label>
-    <select required>
-      <option value="">-- Pilih tingkat pengalaman --</option>
-      <option>Pemula</option>
-      <option>Menengah</option>
-      <option>Ahli</option>
-    </select>
+<label>Pekerjaan / Peran</label>
+<input type="text" name="pekerjaan" placeholder="Contoh: Mahasiswa, Peneliti, Analis SIG" required>
 
-    <label>Kemudahan Menggunakan Produk Peta (1-5)</label>
-    <select required>
-      <option value="">-- Pilih nilai --</option>
-      <option>1 - Sangat sulit</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5 - Sangat mudah</option>
-    </select>
+<label>Tingkat Pengalaman Menggunakan Peta</label>
+<select name="pengalaman" required>
+  <option value="">-- Pilih tingkat pengalaman --</option>
+  <option>Pemula</option>
+  <option>Menengah</option>
+  <option>Ahli</option>
+</select>
 
-    <label>Apa hal yang paling Anda sukai dari produk peta ini?</label>
-    <textarea placeholder="Tulis pendapat Anda"></textarea>
+<label>Kemudahan Menggunakan Produk Peta (1-5)</label>
+<select name="kemudahan" required>
+  <option value="">-- Pilih nilai --</option>
+  <option>1 - Sangat sulit</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5 - Sangat mudah</option>
+</select>
 
-    <label>Apa yang menurut Anda perlu diperbaiki?</label>
-    <textarea placeholder="Tulis kritik & saran"></textarea>
+<label>Apa hal yang paling Anda sukai dari produk peta ini?</label>
+<textarea name="suka"></textarea>
 
-    <button type="submit">Kirim Respon</button>
-  </form>
+<label>Apa yang menurut Anda perlu diperbaiki?</label>
+<textarea name="saran"></textarea>
+
+<button type="submit">Kirim Respon</button>
+</form>
+
 
 </div>
 
