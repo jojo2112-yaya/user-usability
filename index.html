@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usability Testing Produk Peta</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f2f6ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0066ff, #00c2ff);
+      padding: 40px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #0047b3;
+    }
+
+    .product-preview {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-preview img {
+      width: 80%;
+      border-radius: 12px;
+      border: 3px solid #e6ecff;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 18px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 10px;
+      border: 1px solid #ccd7ff;
+      font-size: 15px;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 15px;
+      background: #0066ff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #004ecc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Usability Testing Produk Peta</h1>
+  <p>Formulir evaluasi pengalaman pengguna terhadap produk peta</p>
+</header>
+
+<div class="container">
+
+  
+
+  <h2>Formulir Respon Pengguna</h2>
+
+  <form>
+    <label>Nama Lengkap</label>
+    <input type="text" placeholder="Masukkan nama Anda" required>
+
+    <label>Asal Instansi</label>
+    <input type="text" placeholder="Nama instansi / lembaga / kampus" required>
+
+    <label>Pekerjaan / Peran</label>
+    <input type="text" placeholder="Contoh: Mahasiswa, Peneliti, Analis SIG" required>
+
+    <label>Tingkat Pengalaman Menggunakan Peta</label>
+    <select required>
+      <option value="">-- Pilih tingkat pengalaman --</option>
+      <option>Pemula</option>
+      <option>Menengah</option>
+      <option>Ahli</option>
+    </select>
+
+    <label>Kemudahan Menggunakan Produk Peta (1-5)</label>
+    <select required>
+      <option value="">-- Pilih nilai --</option>
+      <option>1 - Sangat sulit</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5 - Sangat mudah</option>
+    </select>
+
+    <label>Apa hal yang paling Anda sukai dari produk peta ini?</label>
+    <textarea placeholder="Tulis pendapat Anda"></textarea>
+
+    <label>Apa yang menurut Anda perlu diperbaiki?</label>
+    <textarea placeholder="Tulis kritik & saran"></textarea>
+
+    <button type="submit">Kirim Respon</button>
+  </form>
+
+</div>
+
+</body>
+</html>
